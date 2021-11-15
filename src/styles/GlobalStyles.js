@@ -28,6 +28,7 @@ export const GlobalStyles = createGlobalStyle`
 
   input, button {
     font-size: 1.6rem;
+    color: ${(props) => props.theme.textColor};
   }
 
   main {
