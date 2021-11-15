@@ -1,5 +1,9 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { ThemeProvider } from 'styled-components';
 import { useTheme } from './hooks/useTheme';
+import { CountryDetails } from './pages/CountryDetails';
+import { Home } from './pages/Home';
 
 import { GlobalStyles } from './styles/GlobalStyles';
 
@@ -7,13 +11,22 @@ function App() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <main>
-        <h1>Hello World</h1>
-        <button onClick={toggleTheme}>Toggle mode</button>
-      </main>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <main>
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route
+              exact
+              path='/country-details/:id'
+              element={<CountryDetails />}
+            />
+          </Routes>
+          <button onClick={toggleTheme}>Toggle mode</button>
+        </main>
+      </ThemeProvider>
+    </Router>
   );
 }
 
