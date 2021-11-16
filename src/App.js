@@ -20,7 +20,7 @@ function App() {
             <Route exact path='/' element={<Home />} />
             <Route
               exact
-              path='/country-details/:id'
+              path='/country-details/:code'
               element={<CountryDetails />}
             />
           </Routes>
