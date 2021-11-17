@@ -17,6 +17,12 @@ export const Content = styled.div`
   span {
     font-size: 2.4rem;
   }
+
+  @media (max-width: 600px) {
+    span {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export const ContainerButton = styled.div`
@@ -32,6 +38,15 @@ export const ContainerButton = styled.div`
     img {
       width: 2rem;
       height: 2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    button {
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
     }
   }
 `;
