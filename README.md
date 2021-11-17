@@ -1,6 +1,8 @@
-# Frontend Mentor - REST Countries API with color theme switcher solution
+# Frontend Mentor - Challenge
 
 Esta é uma solução para o desafio [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
+
+![Screenshot](./src/img/desktop-preview.jpg)
 
 ### O Desafio
 
@@ -13,10 +15,6 @@ Os usuários devem ser capazes de::
 - Clicar nos países fronteiriços na página de detalhes
 - Alternar o esquema de cores entre o modo claro e escuro _(opcional)_
 
-### Screenshot
-
-![](./src/img/desktop-preview.jpg)
-
 ### Links
 
 - Solução : [Add solution URL here](https://your-solution-url.com)
@@ -28,24 +26,22 @@ Os usuários devem ser capazes de::
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://axios-http.com/)
 
-### Como rodar a aplicação
+### Como utilizar a aplicação
 
-- Clone este repositório
 
-```
-git clone projeto-url
-```
 
-- Entre na pasta do projeto
+```bash
+# Clone este repositório
+$ git clone https://github.com/luiz-gustavo0/countries-app.git
 
-```
-cd pasta do projeto
-```
+# Entre na pasta do projeto
+$ cd countries-app
 
-- Instale as dependências
+# Instale as dependências
+$ yarn install
 
-```
-yarn start
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 ```
 
 ## Author
