@@ -97,6 +97,11 @@ export const InfoCountryBorders = styled.div`
       border-radius: 3px;
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 
   @media (max-width: 600px) {

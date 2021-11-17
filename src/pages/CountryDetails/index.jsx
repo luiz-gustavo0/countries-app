@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react/cjs/react.development';
 
 import * as S from './styles';
@@ -86,7 +86,9 @@ export const CountryDetails = () => {
             <h6>Border Countries:</h6>
             <ul>
               {country?.borders?.map((border, i) => (
-                <li key={i}>{border}</li>
+                <li key={i}>
+                  <Link to={`/country-details/${border}`}>{border}</Link>
+                </li>
               ))}
             </ul>
           </S.InfoCountryBorders>
