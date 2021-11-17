@@ -20,7 +20,7 @@ export const Card = ({ country }) => {
         <h4>{country.name}</h4>
         <p>
           <span>Population: </span>
-          {country.population}
+          {new Intl.NumberFormat().format(country.population)}
         </p>
         <p>
           <span>Region: </span>

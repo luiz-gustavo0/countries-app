@@ -46,7 +46,7 @@ export const CountryDetails = () => {
               </p>
               <p>
                 <strong>População: </strong>
-                {country?.population}
+                {new Intl.NumberFormat().format(country?.population)}
               </p>
               <p>
                 <strong>Region: </strong>
