@@ -17,8 +17,8 @@ Os usuários devem ser capazes de::
 
 ### Links
 
-- Solução : [Add solution URL here](https://your-solution-url.com)
-- Live Site : [Add live site URL here](https://your-live-site-url.com)
+- [Solução](https://your-solution-url.com)
+- [Site](https://app-countriess.netlify.app/)
 
 ### Desenvolvido com
 
@@ -27,8 +27,6 @@ Os usuários devem ser capazes de::
 - [Axios](https://axios-http.com/)
 
 ### Como utilizar a aplicação
-
-
 
 ```bash
 # Clone este repositório
