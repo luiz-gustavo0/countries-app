@@ -58,6 +58,7 @@ export const InfoCountry = styled.div`
 
 export const InfoCountryText = styled.div`
   display: flex;
+  width: 100%;
   gap: 6rem;
   margin-bottom: 3rem;
 
@@ -66,6 +67,10 @@ export const InfoCountryText = styled.div`
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+  }
+
+  & .languages {
+    flex-wrap: wrap;
   }
 
   @media (max-width: 600px) {

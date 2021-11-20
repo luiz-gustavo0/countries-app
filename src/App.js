@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Header } from './components/Header';
 import { useTheme } from './hooks/useTheme';
@@ -11,22 +11,20 @@ function App() {
   const { theme, toggleTheme, isDarkMode } = useTheme();
 
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-        <main>
-          <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route
-              exact
-              path='/country-details/:code'
-              element={<CountryDetails />}
-            />
-          </Routes>
-        </main>
-      </ThemeProvider>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      <main>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route
+            exact
+            path='/country-details/:code'
+            element={<CountryDetails />}
+          />
+        </Routes>
+      </main>
+    </ThemeProvider>
   );
 }
 

@@ -22,7 +22,6 @@ export const CountryDetails = () => {
 
     getCountry();
   }, [code]);
-  console.log(country);
   return (
     <S.Container>
       <button
@@ -74,7 +73,7 @@ export const CountryDetails = () => {
                   <span key={i}>{currency?.name}</span>
                 ))}
               </p>
-              <p>
+              <p className='languages'>
                 <strong>Languages: </strong>
                 {country?.languages.map((language, i) => (
                   <span key={i}>{language?.name},</span>
