@@ -1,4 +1,4 @@
-# Frontend Mentor - Challenge
+# Frontend Mentor - Challenge 
 
 Esta é a minha solução para o desafio [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
@@ -19,6 +19,8 @@ Os usuários devem ser capazes de::
 
 - [Solução](https://www.frontendmentor.io/solutions/responsive-page-built-with-react-and-styledcomponents-hLYoIY5tp)
 - [Site](https://app-countriess.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e58f05b6-a3ea-4afe-b457-91a90e8778e1/deploy-status)](https://app.netlify.com/sites/app-countriess/deploys)
 
 ### Desenvolvido com
 
