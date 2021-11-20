@@ -1,27 +1,26 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { useEffect } from 'react/cjs/react.development';
+import axios from 'axios';
 
 import * as S from './styles';
 
 export const CountryDetails = () => {
-  const { code } = useParams();
   const [country, setCountry] = useState(null);
+  const params = useParams();
 
   const navigate = useNavigate();
 
   useEffect(() => {
     async function getCountry() {
       const response = await axios.get(
-        `https://restcountries.com/v2/alpha/${code}`
+        `https://restcountries.com/v2/alpha/${params.code}`
       );
 
       setCountry(response.data);
     }
 
     getCountry();
-  }, [code]);
+  }, [params]);
   return (
     <S.Container>
       <button
